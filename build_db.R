@@ -23,9 +23,7 @@ get_write_image <- function(x){
   image_write(img, data$path[x], format="jpeg")
 }
 
-get_write_image(151)
 
-map(data$nrow, get_write_image)
-
+map(data$nrow[-1422], get_write_image)
 
 
